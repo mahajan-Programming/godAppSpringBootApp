@@ -16,4 +16,5 @@ public class Content {
     private String contentTag;
     private boolean favourite;
 //    private MultipartFile multipartFile;
+    private String contentLink;
 }

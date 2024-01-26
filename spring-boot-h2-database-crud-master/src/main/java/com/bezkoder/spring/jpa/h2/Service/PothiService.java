@@ -153,6 +153,7 @@ public class PothiService {
         pothiEntity.setContentName(request.getUserList().get(0).getBucketList().get(0).getSectionList().get(0).getContentList().get(0).getContentName());
         pothiEntity.setFavourites(request.getUserList().get(0).getBucketList().get(0).getSectionList().get(0).getContentList().get(0).isFavourite());
         pothiEntity.setContentTag(request.getUserList().get(0).getBucketList().get(0).getSectionList().get(0).getContentList().get(0).getContentTag());
+        pothiEntity.setContentLink(request.getUserList().get(0).getBucketList().get(0).getSectionList().get(0).getContentList().get(0).getContentLink());
 
 //        .save in db
         pothiRepository.save(pothiEntity);
@@ -229,6 +230,7 @@ public class PothiService {
                 content.setContentName(pothi.getContentName());
                 content.setContentTag(pothi.getContentTag());
                 content.setFavourite(pothi.getFavourites());
+                content.setContentLink(pothi.getContentLink());
                 if(null==section.getContentList()){
                 section.setContentList(new ArrayList<>());
                 }

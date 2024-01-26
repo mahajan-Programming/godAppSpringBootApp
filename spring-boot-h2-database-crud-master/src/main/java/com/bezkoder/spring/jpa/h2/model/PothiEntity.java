@@ -47,4 +47,7 @@ public class PothiEntity {
     @Column(name = "favourites")
     private Boolean favourites;
 
+    @Column(name = "contentLink")
+    private Boolean contentLink;
+
 }
