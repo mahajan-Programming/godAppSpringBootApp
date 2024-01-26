@@ -14,7 +14,9 @@
 	<name>spring-boot-jpa-h2</name>
 	<description>Spring Boot JPA + H2 database example - CRUD Rest Apis</description>
 
-	
+	<properties>
+		<java.version>8</java.version>
+	</properties>
 
 	<dependencies>
 		<dependency>
