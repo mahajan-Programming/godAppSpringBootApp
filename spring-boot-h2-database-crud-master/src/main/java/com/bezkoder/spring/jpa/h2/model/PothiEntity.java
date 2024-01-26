@@ -48,6 +48,6 @@ public class PothiEntity {
     private Boolean favourites;
 
     @Column(name = "contentLink")
-    private Boolean contentLink;
+    private String contentLink;
 
 }
