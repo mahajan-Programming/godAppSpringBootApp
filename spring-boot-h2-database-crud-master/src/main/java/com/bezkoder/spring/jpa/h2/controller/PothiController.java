@@ -49,4 +49,9 @@ public class PothiController {
         return response;
     }
 
+    @DeleteMapping("/deleteAllPothis")
+    public String deleteAllPothi(){
+        pothiService.deleteAllPothis();
+        return "deleted";
+    }
 }

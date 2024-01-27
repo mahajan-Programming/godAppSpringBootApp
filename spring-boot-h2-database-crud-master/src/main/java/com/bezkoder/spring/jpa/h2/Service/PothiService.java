@@ -19,6 +19,11 @@ public class PothiService {
     @Autowired
     PothiRepository pothiRepository;
 
+    public String deleteAllPothis(){
+        pothiRepository.deleteAll();
+        return "pothi Deleted";
+    }
+
 
     public String addOrUpdateUser(DataRequestResponse request) {
         PothiEntity pothiEntity = new PothiEntity();
