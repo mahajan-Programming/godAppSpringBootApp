@@ -24,6 +24,29 @@ public class PothiService {
         return "pothi Deleted";
     }
 
+    public String deleteId(DeleteIdObj deleteIdObj){
+        switch (deleteIdObj.getType()) {
+            case "user":
+            List<PothiEntity> pothiEntityList = pothiRepository.findByUserIdContainingIgnoreCase(deleteIdObj.getId());
+            pothiRepository.deleteAll(pothiEntityList);
+                break;
+            case "bucket":
+            pothiRepository.deleteAll(pothiRepository.findByBucketIdContainingIgnoreCase(deleteIdObj.getId()));
+            break;
+
+            case "section":
+            pothiRepository.deleteAll(pothiRepository.findBySectionIdContainingIgnoreCase(deleteIdObj.getId()));
+            break;
+
+            case "content":
+            pothiRepository.deleteAll(pothiRepository.findByContentIdContainingIgnoreCase(deleteIdObj.getId()));
+            break;
+            default:
+                break;
+        }
+        
+        return "deleted the entries";
+    }
 
     public String addOrUpdateUser(DataRequestResponse request) {
         PothiEntity pothiEntity = new PothiEntity();

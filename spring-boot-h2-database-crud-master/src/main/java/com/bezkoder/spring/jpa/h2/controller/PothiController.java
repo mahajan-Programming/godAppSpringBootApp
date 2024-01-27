@@ -2,6 +2,7 @@ package com.bezkoder.spring.jpa.h2.controller;
 
 import com.bezkoder.spring.jpa.h2.Service.PothiService;
 import com.bezkoder.spring.jpa.h2.dto.DataRequestResponse;
+import com.bezkoder.spring.jpa.h2.dto.DeleteIdObj;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -45,13 +46,18 @@ public class PothiController {
 
     @GetMapping("/getAllPothis")
     public DataRequestResponse getAllData(){
-        DataRequestResponse response = pothiService.getAllData();
-        return response;
+        return pothiService.getAllData();
     }
 
     @DeleteMapping("/deleteAllPothis")
     public String deleteAllPothi(){
         pothiService.deleteAllPothis();
+        return "deleted";
+    }
+
+    @DeleteMapping("/deleteId")
+    public String deleteId(@RequestBody DeleteIdObj deleteIdObj){
+        pothiService.deleteId(deleteIdObj);
         return "deleted";
     }
 }
