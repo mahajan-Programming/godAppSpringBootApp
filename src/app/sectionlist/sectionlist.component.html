@@ -1,0 +1,11 @@
+<br> <br>
+<button type="button" class="btn btn-primary btn-lg btn-block">
+    Add Section
+</button><br><br>
+<div *ngFor="let section of sections">
+    <mat-card>
+        {{section.sectionName}}
+        <a (click)="navigateToContent(section)" class="btn btn-info" style="width: 100%;" >Get In</a>
+    </mat-card>
+</div>
+<br>

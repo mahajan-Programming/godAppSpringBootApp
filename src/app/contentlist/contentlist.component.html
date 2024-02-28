@@ -1,0 +1,58 @@
+<!-- Button trigger modal -->
+<br><br>
+<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModalLong">
+    Add new Content
+  </button>
+
+  <button type="button" class=" btn btn-success btn-link btn-block"><a href="https://drive.google.com/drive/my-drive" style="color:aliceblue">Get link for your PDF</a></button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Add New Content</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Content Name</label>
+                  <input type="text" class="form-control" id="recipient-name">
+
+                  <label for="recipient-tag" class="col-form-label">Conent Tag</label>
+                  <input type="text" class="form-control" id="recipient-tag">
+
+                  <label for="recipient-pdf-link" class="col-form-label">PDF Link</label>
+                  <input type="text" class="form-control" id="recipient-pdf-link">
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+          <button type="button" class="btn btn-primary">Save Content</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Collapsible Group Item #1
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            <iframe src="https://drive.google.com/file/d/16HZU5IZJuEG4DUydTHbTGtSBhcGZp584/preview"  width="98%" height="480" allow="autoplay"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>

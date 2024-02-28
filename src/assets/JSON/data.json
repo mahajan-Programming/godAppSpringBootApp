@@ -1,0 +1,69 @@
+{
+    "requestResponseId": null,
+    "userList": [
+      {
+        "userId": "5b448035-c862-44cb-8d41-f1705a0da71c",
+        "userName": "user1",
+        "bucketList": [
+          {
+            "bucketId": "a979ce30-0b65-4696-b3f2-57a6ac75ff69",
+            "bucketName": "user1-bucket1",
+            "sectionList": [
+              {
+                "sectionId": "8488df69-6650-4bc1-85d2-9d3746cf066f",
+                "sectionName": "user1-bucket1-section1",
+                "contentList": [
+                  {
+                    "contentId": "8bb3c139-6b69-43cd-9788-6d7f55afc8de",
+                    "contentName": "shreyas content1",
+                    "contentTag": "string",
+                    "favourite": true
+                  },
+                  {
+                    "contentId": "311593b2-50be-4e91-9d60-1c9054721dff",
+                    "contentName": "shreyas contt1",
+                    "contentTag": "string",
+                    "favourite": true
+                  }
+                ]
+              },
+              {
+                "sectionId": "72710881-57f0-4960-a082-4f9386f444a7",
+                "sectionName": "shreyas section11",
+                "contentList": null
+              }
+            ]
+          },
+          {
+            "bucketId": "884a84b0-4495-4039-baf8-73e762ea427e",
+            "bucketName": "shreyas-bu3",
+            "sectionList": null
+          }
+        ]
+      },
+      {
+        "userId": "fbda537d-73e4-43e6-925e-72cb3a02ad7f",
+        "userName": "java-newww",
+        "bucketList": [
+          {
+            "bucketId": "ad5628a9-9dc4-4a91-a315-89083292129a",
+            "bucketName": "java-bu3",
+            "sectionList": [
+              {
+                "sectionId": "27e42a25-d22b-4c36-a32d-124e78d5d8e0",
+                "sectionName": "shreyas section11",
+                "contentList": [
+                  {
+                    "contentId": "dc63149d-79cc-4517-858b-0650757f12b6",
+                    "contentName": "shreyas contt1 of section11",
+                    "contentTag": "string",
+                    "favourite": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

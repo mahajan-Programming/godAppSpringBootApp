@@ -1,0 +1,11 @@
+<div class="add-user-form">
+    <h2>Add User</h2>
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <label for="userName">User Name:</label>
+      <input type="text" id="userName" name="userName" [(ngModel)]="user.userName" required>
+  
+      <!-- Add more fields as needed -->
+  
+      <button type="submit" [disabled]="userForm.invalid">Save</button>
+    </form>
+  </div>
