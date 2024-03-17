@@ -1,0 +1,162 @@
+/* Card */
+.card {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white; /* Text color */
+}
+
+.card-header {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Darker semi-transparent black background for header */
+  padding: 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.table tbody tr {
+  transition: background-color 0.3s;
+  background-color: rgba(
+    248,
+    249,
+    250,
+    0.126
+  ); /* Background color with 80% opacity */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(
+    248,
+    249,
+    250,
+    0.194
+  ); /* Background color with 80% opacity */
+}
+
+.table tbody tr:hover {
+  background-color: rgba(
+    233,
+    236,
+    239,
+    0.329
+  ); /* Hover color with 80% opacity */
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: rgba(255, 255, 255, 0.183); /* Text color */
+}
+
+.modal-header {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Darker semi-transparent black background for header */
+  color: rgba(255, 255, 255, 0.132);
+  padding: 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  padding: 10px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Darker semi-transparent black background for footer */
+  color: rgba(255, 255, 255, 0.13); /* Text color */
+}
+
+.table-responsive {
+  background-color: rgba(0, 0, 0, 0.37);
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-responsive th {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.table-responsive tr {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.148
+  ); /* Background color with 80% opacity */
+  transition: background-color 0.3s;
+}
+
+.table-responsive tr:nth-child(even) {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.361
+  ); /* Background color with 80% opacity for even rows */
+}
+
+.table-responsive tr:hover {
+  background-color: rgba(
+    233,
+    236,
+    239,
+    0.24
+  ); /* Hover color with 80% opacity */
+}
+
+.table-responsive td {
+  padding: 8px;
+}
+
+.table-responsive td {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.205
+  ); /* Background color with 80% opacity */
+}
+
+.table-responsive td:nth-child(even) {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.139
+  ); /* Background color with 80% opacity for even rows */
+}
+
+.table-responsive td:hover {
+  background-color: rgba(
+    233,
+    236,
+    239,
+    0.304
+  ); /* Hover color with 80% opacity */
+}
